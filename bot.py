@@ -3,7 +3,7 @@ bot = telebot.TeleBot('1766732598:AAHNUBoE7E0L_ezdkabezW0uWtfprOeYrzg')
 
 @bot.message_handler(commands=['start', 'help'])
 def send_welcome(message):
-    bot.reply_to(message, f'Я бот. Приятно познакомиться, {message.from_user.first_name}')
+    bot.reply_to(message, f'Приятно познакомиться, {message.from_user.first_name}')
 
 @bot.message_handler(content_types=['text'])
 def get_text_messages(message):
